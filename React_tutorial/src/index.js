@@ -19,7 +19,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Lesson2 from './lesson2'
 
-const title = 'Hello React'
 
-ReactDOM.render(<h1>{title}</h1>,document.getElementById('root'))
+
+ReactDOM.render(<Lesson2/> ,document.getElementById('root'))
