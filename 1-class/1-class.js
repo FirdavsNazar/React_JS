@@ -2,7 +2,6 @@
 
 
 
-
 // What is React Js?
 // Why React is so popular?
 // Main features of React Js
