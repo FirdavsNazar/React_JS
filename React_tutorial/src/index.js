@@ -19,14 +19,14 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Lesson1, {Lesson2 }from './lesson_1'
+import Lesson1 from './lesson_1'
 
 
 
 ReactDOM.render(
 <React.StrictMode>
-  <Lesson1/> 
-  <Lesson2/> 
+  <Lesson1 city = 'SariAsiya'/> 
+
 
 </React.StrictMode>,
 document.getElementById('root'))
