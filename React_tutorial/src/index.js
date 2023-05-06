@@ -19,8 +19,14 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Lesson2 from './lesson2'
+import Lesson1, {Lesson2 }from './lesson_1'
 
 
 
-ReactDOM.render(<Lesson2/> ,document.getElementById('root'))
+ReactDOM.render(
+<React.StrictMode>
+  <Lesson1/> 
+  <Lesson2/> 
+
+</React.StrictMode>,
+document.getElementById('root'))
