@@ -5,8 +5,9 @@ import React, { Component } from 'react'
   render() {
     return (
       <div> 
-        <h1>HELLO {this.props.city}</h1>
-        <h3>hELLO WORLD</h3>
+        <h3>WelCome to </h3>
+        <h1> {this.props.city} life </h1>
+        <h5> {this.props.city} has {this.props.population || 'unknown'}  population  </h5>
       </div>
     )
   }

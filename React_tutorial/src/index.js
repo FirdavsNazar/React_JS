@@ -25,7 +25,9 @@ import Lesson1 from './lesson_1'
 
 ReactDOM.render(
 <React.StrictMode>
-  <Lesson1 city = 'SariAsiya'/> 
+  <Lesson1 city = 'SariAsiya' population = '100.000'/> 
+  <Lesson1 city = 'Uzun'/> 
+  <Lesson1 city = 'Denav'/> 
 
 
 </React.StrictMode>,
