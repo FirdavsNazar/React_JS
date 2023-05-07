@@ -19,15 +19,20 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Lesson1 from './lesson_1'
+import './index.css'
+import Parent from './lesson2/propsParent'
+
+
+
+
 
 
 
 ReactDOM.render(
 <React.StrictMode>
-  <Lesson1 city = 'SariAsiya' population = '100.000'/> 
-  <Lesson1 city = 'Uzun'/> 
-  <Lesson1 city = 'Denav'/> 
+ 
+  <Parent/> 
+
 
 
 </React.StrictMode>,
