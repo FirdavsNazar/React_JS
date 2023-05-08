@@ -20,8 +20,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+// import  App from './lesson2/class'
 import Parent from './lesson2/propsParent'
-
 
 
 
@@ -31,9 +31,8 @@ import Parent from './lesson2/propsParent'
 ReactDOM.render(
 <React.StrictMode>
  
+  {/* <Web/>  */}
   <Parent/> 
-
-
 
 </React.StrictMode>,
 document.getElementById('root'))

@@ -3,18 +3,18 @@ import React from "react";
 
 //Without Destructure
 
-const Child = (props) => {
+// const Child = (props) => {
 
-    return (
-        <div>
+//     return (
+//         <div>
 
-            <h1>
-                {props.text} 
-            </h1>
+//             <h1>
+//                 {props.text} {props.status}
+//             </h1>
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
 
 
@@ -24,18 +24,19 @@ const Child = (props) => {
 
 
 
-// const Child = (props) => {
-//     const{text, status} = props
-//     return (
-//         <div>
+const Child = (props) => {
+    const{text, status} = props
+    return (
+        <div>
 
-//             <h1>
-//                 {text} {status}
-//             </h1>
+            <h1>
+                {text} {status}
+            </h1>
+            {props.children}
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
 
 
@@ -60,7 +61,9 @@ const Child = (props) => {
 
 
 
-//How to call props to Class Components
+
+
+// How to call props to Class Components
 
 // class Child extends React.Component{
 //     render(){
