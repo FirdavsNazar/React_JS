@@ -1,8 +1,4 @@
-.hey{
-  /* background-color: aquamarine; */
-  color: aquamarine;
-}
-
-.how{
-  color: aqua;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
