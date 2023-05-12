@@ -20,7 +20,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Figma from './lesson_3/figma'
+import App from './lesson_4/app'
+
 
 
 
@@ -31,7 +32,7 @@ import Figma from './lesson_3/figma'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Figma/> 
+  <App/> 
 
 </React.StrictMode>,
 document.getElementById('root'))
