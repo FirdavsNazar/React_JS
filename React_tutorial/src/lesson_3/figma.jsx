@@ -8,13 +8,13 @@ class figma extends React.Component{
     render(){
         return(
             <div className="wrapper">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-         
+            <Card title='Enjoy Beauty place in Bali City' />
+            <Card title='Enjoy Beauty place in Rom City' />
+            <Card title='Enjoy Beauty place Japan City' />
+            <Card title='Enjoy Beauty place Japan City' />
+            <Card title='Enjoy Beauty place in Italy City' />
+            <Card title='Enjoy Beauty place in Bali City' />
+                
     
             </div>
         )
