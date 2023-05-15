@@ -2,7 +2,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './table/app'
+import Data from './lesson_5/crud'
+
+
 
 
 
@@ -16,7 +18,8 @@ import App from './table/app'
 ReactDOM.render(
 <React.StrictMode>
  
-  <App/> 
+  <Data/> 
+ 
 
 </React.StrictMode>,
 document.getElementById('root'))
