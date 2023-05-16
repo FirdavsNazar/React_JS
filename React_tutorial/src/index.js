@@ -2,7 +2,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Data from './lesson_5/crud'
+// import App from './table/app'
+import Data from './table/table'
 
 
 

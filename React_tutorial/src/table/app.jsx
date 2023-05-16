@@ -1,11 +1,10 @@
 import './App.css';
 
-// Example of a data array that
-// you might receive from an API
+
 const data = [
-{ name: "Anom", age: 19, gender: "Male" },
-{ name: "Megha", age: 19, gender: "Female" },
-{ name: "Subham", age: 25, gender: "Male"},
+{ name: "Firdavs", age: 22, gender: "Male", status: 'Developer' },
+{ name: "Murodjon", age: 26, gender: "Male", status: 'Developer' },
+{ name: "Sirojiddin", age: 25, gender: "Male", status: 'Developer'},
 ]
 
 function App() {
@@ -16,6 +15,7 @@ return (
 		<th>Name</th>
 		<th>Age</th>
 		<th>Gender</th>
+		<th>Status</th>
 		</tr>
 		{data.map((val, key) => {
 		return (
@@ -23,6 +23,7 @@ return (
 			<td>{val.name}</td>
 			<td>{val.age}</td>
 			<td>{val.gender}</td>
+			<td>{val.status}</td>
 			</tr>
 		)
 		})}
