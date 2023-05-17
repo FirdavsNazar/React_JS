@@ -31,21 +31,34 @@ export default class Data extends Component {
           <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
           
 <div className="App">
-	<table border={1} width={500} >
+	<table border={1} style={{borderCollapse:'collapse'}} width={'50%'} >
+    <thead>
+
 		<tr>
 		<th>Id</th>
 		<th>Name</th>
 		<th>Status</th>
+		<th>Delete</th>
+		<th>Edit</th>
+   
 		</tr>
-		{users.map((val, key) => {
-		return (
-			<tr key={key}>
-			<td>{val.id}</td>
-			<td>{val.name}</td>
-			<td>{val.status}</td>
-			</tr>
-		)
-		})}
+    
+    </thead>
+		{
+      this.state.dataList.map(({id,name,status}) => {
+        return(
+          <tbody key={id}>
+            <tr>
+              <td>{id}</td>
+              <td>{name}</td>
+              <td>{status}</td>
+              <td><button>delete</button></td>
+              <td><button>edit</button></td>
+            </tr>
+          </tbody>
+        )
+      })
+    }
 	</table>
 	</div>
            
