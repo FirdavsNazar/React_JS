@@ -70,6 +70,7 @@ export default class Create extends Component {
 
       }
 
+      
     return (
         <div>  
           <input onChange={filteredInfo} type="text" placeholder='search...' />
