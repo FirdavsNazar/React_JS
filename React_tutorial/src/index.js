@@ -2,10 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-// import App from './table/app'
-import Data from './table/table'
-
-
+import Read from './lesson_6 CRUD/read.jsx'
 
 
 
@@ -19,7 +16,7 @@ import Data from './table/table'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Data/> 
+  <Read/> 
  
 
 </React.StrictMode>,
