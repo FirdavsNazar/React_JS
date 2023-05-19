@@ -44,10 +44,9 @@ export default class Update extends Component {
       }
 
       const onChange = (e) => {
-
         this.setState({
         [e.target.name] : e.target.value
-        })
+      })
 
       }
 
@@ -69,8 +68,15 @@ export default class Update extends Component {
       }
 
        const onUpdate = ({id,name,status}, isActive) => {
+        
         if(isActive){
-            this.setState({select:null})
+          let updateValue= this.state.dataList.map((value) => value.id === this.state.select?.id ? {...value, name: this.state.name, status: this.state.status} : value)
+            this.setState({
+              select:null,
+              dataList: updateValue
+            
+            })
+
         } else {
 
             this.setState({
@@ -117,13 +123,13 @@ export default class Update extends Component {
               <td>{id}</td>
               <td>
                 {
-                    this.state.select?.id === id ? <input value={this.state.select.name} type="text" />  : name
-                }
-              </td>
-              <td>
-                {
-                    this.state.select?.id === id ? <input value={this.state.select.status} type="text" />  : status
-                }
+                    this.state.select?.id === id ? <input onChange={onChange} name='name' value={this.state.select.name} type="text" />  : name
+                } 
+              </td> 
+              <td> 
+                { 
+                    this.state.select?.id === id ? <input onChange={onChange}  value={this.state.select.status} type="text" />  : status
+                } 
               </td>
               <td><button onClick={()=>onDelete (id)}>delete</button></td>
               <td>
