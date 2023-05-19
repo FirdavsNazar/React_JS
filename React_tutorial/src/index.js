@@ -2,9 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Update from './lesson_6 CRUD/update'
-
-
+import App from './lesson_7 Components/App'
 
 
 
@@ -18,7 +16,7 @@ import Update from './lesson_6 CRUD/update'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Update/> 
+  <App/> 
  
 
 </React.StrictMode>,
