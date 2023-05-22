@@ -1,38 +1,31 @@
 
-import React from 'react'
-import {Container, Div, Div1, Button} from './style.js'
+import React from 'react';
+import {Container, Wrapper, Img, Span,Link,Button} from './style.js';
+import logo from '../../assets/logo.png';
+import {navLink} from '../data.js'
 
 
 const Navbar = () => {
   return (
     <Container>
-
-<Div Navbar>
-
-        <div logo>
-             <img src="" alt="" />
-             <h1>Explore</h1>
-         </div>
-
-         <Div1 Menu>
-
-            <p>Home</p>
-            <p>Tours</p>
-            <p>Hotel</p>
-            <p>Galary</p>
-            <p>Pages</p>
-            <p>Blog</p>
-            <p>Contact</p>
-            <p>Login</p>
-            
-            <Button sign >Sign UP</Button>
-
-
-         </Div1>
-
-
-</Div>
-       
+      <Wrapper>
+         
+         <Wrapper.Logo>
+            <Img src={logo} alt="" />
+            <Span> Explore</Span> 
+         </Wrapper.Logo>
+        
+         < Wrapper.Link>
+         {
+            navLink.map((value)=> {
+               return(
+                  <Link>{value.title}</Link>
+              )
+            })
+         }
+          <Button>Sign UP</Button>
+         </Wrapper.Link>
+       </Wrapper>
     </Container>
   )
 }
