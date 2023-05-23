@@ -6,7 +6,9 @@ import img3 from '../../assets/img3.png'
 import img4 from '../../assets/img4.png'
 import img5 from '../../assets/img5.png'
 import img6 from '../../assets/img6.png'
-import { Container,Wrapper,FooterImg, ContactNumber, ContactImges, ContactImg, ContactSpan, FooterContact, TypeSpan1, TypeHeader, FooterType, FooterImg2, FooterSpan3, FooterNetwork1, FooterNetwork3, FooterNetwork2, FooterSpan2, FooterSpan, FooterNetwork, Container2,FooterAdr, Wrapper2, BtnJoin, BtnEmail,FooterButton, FooterHeader,WrapperHeader, } from './style'
+import img7 from '../../assets/img7.png'
+import img8 from '../../assets/img8.png'
+import { Container,Wrapper,FooterImg, Container4Header, Container4, ContactImges2, ContactImgNum, ContactNumber, ContactImges, ContactImg, ContactSpan, FooterContact, TypeSpan1, TypeHeader, FooterType, FooterImg2, FooterSpan3, FooterNetwork1, FooterNetwork3, FooterNetwork2, FooterSpan2, FooterSpan, FooterNetwork, Container2,FooterAdr, Wrapper2, BtnJoin, BtnEmail,FooterButton, FooterHeader,WrapperHeader, } from './style'
 
 const Footer = () => {
   return (
@@ -75,21 +77,41 @@ const Footer = () => {
                            <ContactSpan>
                                 Contact info
                           </ContactSpan>
+                         
+                    
 
                           <ContactImges>
-
-                         <ContactImg src={img6} alt="" />
-                         <ContactNumber>88130-589-745-6987 +1655-456-523
-                        </ContactNumber>
-
-
+                         <ContactImg src={img6} alt="" />  
                           </ContactImges>
-
+                         
+                        <ContactImgNum>
+                              <ContactNumber>88130-589-745-6987 +1655-456-52</ContactNumber>
+                        </ContactImgNum>
                         
+
+                        <ContactImges2>
+                            <ContactImg src={img7} alt="" />
+                        </ContactImges2>
+                        <ContactImgNum>
+                              <ContactNumber>Mon-Fri 09:00-18:00(except public holidays)</ContactNumber>
+                        </ContactImgNum>
+
+                        <ContactImges2>
+                            <ContactImg src={img8} alt="" />
+                        </ContactImges2>
+                        <ContactImgNum>
+                              <ContactNumber>25/2 Vokte Street BuildingMelborn City</ContactNumber>
+                        </ContactImgNum>
                       </FooterContact>
                   </FooterAdr>
              </Wrapper2>
        </Container2>
+       
+       <Container4>
+            <Container4Header>   
+                    © Copyright 2022. All Rights Reserved by LabArtisan
+            </Container4Header>
+       </Container4>
 
 
     </Container>

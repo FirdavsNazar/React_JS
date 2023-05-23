@@ -86,6 +86,7 @@ const WrapperHeader= styled.div`
   max-width: 1440px;
   background: linear-gradient(0deg, #0C1218, #0C1218), url(3004-1024x685.jpg);
   display: flex;
+ 
   `;
 
   const FooterAdr = styled.div`
@@ -95,16 +96,20 @@ const WrapperHeader= styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 130px;
-  
+  margin-top: 20px;
+  margin-left: 120px
+
   `
 
   const FooterNetwork = styled.div`
   margin-top: 70px;
+  
 
   
 
   `
   const FooterNetwork1 = styled.div`
+
   
   `
 
@@ -156,10 +161,17 @@ const FooterImg2 = styled.img`
 
 const FooterType = styled.div`
 
- margin-top: 70px;
+/* margin: 0px 80px 0px 20px */
+
+
 `
 const TypeHeader = styled.h1`
-
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 35px;
+color: #FFFFFF;
+margin-top:67px
 `
 
 const TypeSpan1 = styled.h1`
@@ -174,10 +186,19 @@ color: #FFFFFF;
 `
 
 const FooterContact = styled.div`
+margin-top: 10px
+
+`
+
+const ContactWrapper = styled.div`
+display: flex;
 
 `
 
 const ContactImges = styled.div`
+
+`
+const ContactImges2 = styled.div`
 
 `
 
@@ -187,6 +208,8 @@ const ContactSpan = styled.h1`
    font-size: 22px;
    line-height: 30px;
    color: #FFFFFF;
+   margin-top: 75px;
+   margin-bottom: 20px
 
 
 `
@@ -195,7 +218,7 @@ display: flex;
 
 `
 
-const ContactNumber = styled.h1`
+const ContactNumber = styled.span`
 font-style: normal;
 font-weight: 600;
 font-size: 15px;
@@ -203,8 +226,27 @@ line-height: 15px;
 color: #FFFFFF;
 width: 180px;
 height: 50px;
+`
+const ContactImgNum = styled.div`
+ 
+margin: 10px 10px
 
+`
 
+const Container4 = styled.div`
+width: 100%;
+height: 100px;
+background: #1A2531;
+
+`
+const Container4Header = styled.h1`
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+padding-top: 30px
 
 `
 
@@ -214,5 +256,4 @@ height: 50px;
 
 
 
-
-export {Container, ContactNumber, ContactImges, ContactImg, ContactSpan, FooterContact, TypeSpan1, TypeHeader, FooterType, FooterImg2, FooterSpan3, FooterNetwork1, FooterNetwork3, FooterNetwork2, FooterSpan,FooterSpan2, FooterImg, FooterNetwork,Container2, FooterAdr, Wrapper2, BtnJoin, BtnEmail, FooterButton, Wrapper, FooterHeader, WrapperHeader}
+export {Container, Container4Header, Container4, ContactImges2, ContactWrapper, ContactImgNum, ContactNumber, ContactImges, ContactImg, ContactSpan, FooterContact, TypeSpan1, TypeHeader, FooterType, FooterImg2, FooterSpan3, FooterNetwork1, FooterNetwork3, FooterNetwork2, FooterSpan,FooterSpan2, FooterImg, FooterNetwork,Container2, FooterAdr, Wrapper2, BtnJoin, BtnEmail, FooterButton, Wrapper, FooterHeader, WrapperHeader}
