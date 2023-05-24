@@ -2,10 +2,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './Figma/App'
-import Banner from './Figma/Banner'
-import Places from './Figma/Places';
-import Footer from './Figma/Footer'
+import Key from './lesson_8 (Fun_hooks)/key'
+
+
 
 
 
@@ -16,10 +15,8 @@ import Footer from './Figma/Footer'
 ReactDOM.render(
 <React.StrictMode>
  
-  <App/> 
-  <Banner/> 
-  <Places/> 
-  <Footer/> 
+  <Key/> 
+ 
  
 
 </React.StrictMode>,
