@@ -24,6 +24,8 @@ import {useState} from 'react'
         setName({ ...name, [e.target.name]: e.target.value });
     }
 
+
+          
     // const onStatusChange = (e) => {
     //     setStatus(e.target.value)
     // }
@@ -32,16 +34,14 @@ import {useState} from 'react'
 
   return (
     <div>
+       
         {/* with inputs */}
+
         <h1>Name: {name.name}</h1>
         <h1>Status: {name.status}</h1>
         <input onChange={multiFunction} name='name' type="text" placeholder='name' />
         <input onChange={multiFunction} name='status'type="text" placeholder='status' />
         <hr />
-        
-        
-        
-        
         
         {/* with buttons */}
 
@@ -53,27 +53,5 @@ import {useState} from 'react'
     </div>
   )
 }
-
-
-
-
-// import React, { useState } from 'react';
-
-// const State = () => {
-//   const [name, setName] = useState({}); // Assuming `name` is initially an object
-
-//   const multiFunction = (e) => {
-//     setName({ ...name, [e.target.name]: e.target.value });
-//   };
-
-//   return (
-//     <div>
-//       <input type="text" name="firstName" onChange={multiFunction} placeholder='fname' />
-//       <input type="text" name="lastName" onChange={multiFunction} placeholder='lname' />
-//       <p>First Name: {name.firstName}</p>
-//       <p>Last Name: {name.lastName}</p>
-//     </div>
-//   );
-// };
 
 export default State
