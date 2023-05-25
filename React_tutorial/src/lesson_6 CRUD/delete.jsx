@@ -83,10 +83,7 @@ export default class Delete extends Component {
       
     }
 	</table>
-	</div>
-           
-
-          
+	</div>   
           
         </div>
     )
