@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Delete from './lesson_8 (Fun_hooks)/CRUD/delete'
+import { Search } from './lesson_8 (Fun_hooks)/CRUD/search'
 
 
 
@@ -22,7 +22,7 @@ import Delete from './lesson_8 (Fun_hooks)/CRUD/delete'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Delete/> 
+  <Search/> 
  
  
 

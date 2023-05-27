@@ -1,7 +1,4 @@
 
-
-
-
 import React, { Component } from 'react';
 import {users} from './read.js';
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { users } from '../data.js';
 
-export const Delete = () => {
+export const Search = () => {
   const [data, setData] = useState(users);
 
   const handleDelete = (userId) => {
@@ -9,8 +9,15 @@ export const Delete = () => {
     setData(updatedData);
   };
 
+  const filteredInfo = (e) => {
+   let filtered =  users.filter((value) => value.name.includes(e.target.value) || value.status.includes(e.target.value))
+  
+   setData(filtered);
+  }
+
   return (
     <div>
+         <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
       <div className="App">
         <table border={1} style={{ borderCollapse: 'collapse' }} width={'50%'}>
           <thead>
@@ -53,7 +60,4 @@ export const Delete = () => {
   );
 };
 
-export default Delete;
-
-
-
+export default Search;
