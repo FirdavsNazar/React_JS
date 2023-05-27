@@ -9,8 +9,18 @@ export const Delete = () => {
     setData(updatedData);
   };
 
+  const multiFunction = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+}
+
   return (
     <div>
+       <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
+       <h1>Name: {data.name}</h1>
+        <h1>Status: {data.status}</h1>
+        <input onChange={multiFunction} name='name' type="text" placeholder='name' />
+        <input onChange={multiFunction} name='status'type="text" placeholder='status' />
+        <hr /> <br />
       <div className="App">
         <table border={1} style={{ borderCollapse: 'collapse' }} width={'50%'}>
           <thead>
