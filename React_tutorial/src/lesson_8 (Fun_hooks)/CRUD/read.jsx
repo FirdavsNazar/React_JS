@@ -11,8 +11,8 @@ export const Read = () => {
     const [filter, setFilter] = useState('');
   
 
-    // Input function
-    
+    // Searching function
+
     const filteredInfo = (e) => {
       const filterData = users.filter(
         (value) =>
@@ -22,7 +22,7 @@ export const Read = () => {
     };
 
 
-    // Searching function
+    // Input function
 
     const multiFunction = (e) => {
       setData({ ...data, [e.target.name]: e.target.value });
