@@ -17,7 +17,6 @@ export default class Delete extends Component {
   render() {
 
     
-
       const filteredInfo = (e) => {
         // console.log(e.target.value);
        let filtered =  users.filter((value) => value.name.includes(e.target.value) || value.status.includes(e.target.value))
