@@ -13,6 +13,7 @@ export const Delete = () => {
     setData({ ...data, [e.target.name]: e.target.value });
 }
 
+
   return (
     <div>
        <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
