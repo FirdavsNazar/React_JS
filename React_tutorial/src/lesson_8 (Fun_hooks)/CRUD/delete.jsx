@@ -14,7 +14,14 @@ export const Delete = () => {
   };
 
   //   Searching function
-  
+
+  const filteredInfo = (e) => {
+    let filtered =  users.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()) || value.status.toLowerCase().includes(e.target.value.toLowerCase()))
+
+  setData(filtered);
+};
+
+  // Input function
   const multiFunction = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
 }
