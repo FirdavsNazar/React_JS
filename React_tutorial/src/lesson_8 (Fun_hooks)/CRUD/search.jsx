@@ -23,6 +23,7 @@ export const Search = () => {
     <div>
          <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
 
+
          <h1>Name: {data.name}</h1>
         <h1>Status: {data.status}</h1>
         <input onChange={multiFunction} name='name' type="text" placeholder='name' />
