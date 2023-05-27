@@ -4,11 +4,17 @@ import { users } from '../data.js';
 export const Delete = () => {
   const [data, setData] = useState(users);
 
+
+
+  //   Delete function
+
   const handleDelete = (userId) => {
     const updatedData = data.filter((user) => user.id !== userId);
     setData(updatedData);
   };
 
+  //   Searching function
+  
   const multiFunction = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
 }
