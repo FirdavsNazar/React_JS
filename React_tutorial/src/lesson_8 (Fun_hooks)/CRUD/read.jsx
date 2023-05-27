@@ -11,15 +11,14 @@ export const Read = () => {
     const [filter, setFilter] = useState('');
   
 
-    // Searching function
 
-    const filteredInfo = (e) => {
-      const filterData = users.filter(
-        (value) =>
-          value.name.includes(e.target.value) || value.status.includes(e.target.value)
-      );
-      setFilter(filterData);
-    };
+    //   Searching function
+
+  const filteredInfo = (e) => {
+    let filtered =  users.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()) || value.status.toLowerCase().includes(e.target.value.toLowerCase()))
+
+  setData(filtered);
+};
 
 
     // Input function
