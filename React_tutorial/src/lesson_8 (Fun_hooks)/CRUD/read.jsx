@@ -21,8 +21,7 @@ export const Read = () => {
     const multiFunction = (e) => {
       setData({ ...data, [e.target.name]: e.target.value });
   }
-
-        
+ 
   return (
 
     <div>
