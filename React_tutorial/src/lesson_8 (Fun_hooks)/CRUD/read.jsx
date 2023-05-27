@@ -10,14 +10,8 @@ export const Read = () => {
     const [data, setUsers] = useState(users);
     const [filter, setFilter] = useState('');
   
-    const filteredInfo = (e) => {
-      const filterData = users.filter(
-        (value) =>
-          value.name.includes(e.target.value) || value.status.includes(e.target.value)
-      );
-      setFilter(filterData);
-    };
-
+   
+    
     const multiFunction = (e) => {
       setData({ ...data, [e.target.name]: e.target.value });
   }
