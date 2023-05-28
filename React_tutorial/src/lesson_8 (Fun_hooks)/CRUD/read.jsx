@@ -7,29 +7,46 @@ import {users} from '../data.js'
 
 export const Read = () => {
 
+  const[ values, setValues] = useState({
+    name: '',
+    status: ''
+});
+
     const [data, setUsers] = useState(users);
-    const [filter, setFilter] = useState('');
+    const [search, setSearch] = useState('');
+    
   
 
 
-    //   Searching function
+    //    Searching function
 
-  const filteredInfo = (e) => {
-    let filtered =  users.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()) || value.status.toLowerCase().includes(e.target.value.toLowerCase()))
+    const filteredInfo = (e) => {
+      let filtered =  users.filter((value) => `${value[search]}`.toLowerCase().includes(e.target.value.toLowerCase()))
 
-  setData(filtered);
-};
+    setUsers(filtered);
+  };
 
 
     // Input function
 
     const multiFunction = (e) => {
-      setData({ ...data, [e.target.name]: e.target.value });
+      setValues({ ...values, [e.target.name]: e.target.value });
   }
+
+   // Select 
+
+   const onSelect = (e) =>{
+    setSearch(e.target.value)
+}
  
   return (
 
     <div>
+      <select onChange={onSelect}>
+            <option value="id">id</option>
+            <option value="name">name</option>
+            <option value="status">status</option>
+        </select>
         <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
         <h1>Name: {data.name}</h1>
         <h1>Status: {data.status}</h1>

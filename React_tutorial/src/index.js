@@ -11,14 +11,6 @@ import { Create } from './lesson_8 (Fun_hooks)/CRUD/create'
 
 
 
-
-
-
-
-
-
-
-
 ReactDOM.render(
 <React.StrictMode>
  
