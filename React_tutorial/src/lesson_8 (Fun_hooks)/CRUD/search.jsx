@@ -2,23 +2,39 @@ import React, { useState } from 'react';
 import { users } from '../data.js';
 
 export const Search = () => {
+
+    const[ values, setValues] = useState({
+        name: '',
+        status: ''
+    });
+
+
     const [data, setData] = useState(users);
     const [search, setSearch] = useState('');
   
+
+    //  Filter function
+
     const filteredInfo = (e) => {
         let filtered =  users.filter((value) => `${value[search]}`.toLowerCase().includes(e.target.value.toLowerCase()))
 
       setData(filtered);
     };
 
+      // Delete function
+
     const handleDelete = (userId) => {
         const updatedData = data.filter((user) => user.id !== userId);
         setData(updatedData);
       };
 
+      //  MultiInput function
+
       const multiFunction = (e) => {
-        setData({ ...data, [e.target.name]: e.target.value });
+        setValues({ ...values, [e.target.name]: e.target.value });
     }
+
+      // Select function
 
     const onSelect = (e) =>{
         setSearch(e.target.value)
