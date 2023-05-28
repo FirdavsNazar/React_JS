@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import { users } from '../data.js';
 
 export const Delete = () => {
+
+  const[ values, setValues] = useState({
+    name: '',
+    status: ''
+});
   const [data, setData] = useState(users);
+  const [search, setSearch] = useState('');
 
 
 
@@ -16,22 +22,33 @@ export const Delete = () => {
   //   Searching function
 
   const filteredInfo = (e) => {
-    let filtered =  users.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()) || value.status.toLowerCase().includes(e.target.value.toLowerCase()))
+    let filtered =  users.filter((value) => `${value[search]}`.toLowerCase().includes(e.target.value.toLowerCase()))
 
   setData(filtered);
 };
 
   // Input function
   const multiFunction = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    setValues({ ...values, [e.target.name]: e.target.value });
+}
+
+//  Select
+
+const onSelect = (e) =>{
+  setSearch(e.target.value)
 }
 
 
   return (
     <div>
+       <select onChange={onSelect}>
+            <option value="id">id</option>
+            <option value="name">name</option>
+            <option value="status">status</option>
+        </select>
        <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
-       <h1>Name: {data.name}</h1>
-        <h1>Status: {data.status}</h1>
+       <h1>Name: {values.name}</h1>
+        <h1>Status: {values.status}</h1>
         <input onChange={multiFunction} name='name' type="text" placeholder='name' />
         <input onChange={multiFunction} name='status'type="text" placeholder='status' />
         <hr /> <br />
