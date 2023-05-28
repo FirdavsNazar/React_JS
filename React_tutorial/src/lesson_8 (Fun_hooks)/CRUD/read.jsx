@@ -12,7 +12,7 @@ export const Read = () => {
     status: ''
 });
 
-    const [data, setUsers] = useState(users);
+    const [data, setData] = useState(users);
     const [search, setSearch] = useState('');
     
   
@@ -23,7 +23,7 @@ export const Read = () => {
     const filteredInfo = (e) => {
       let filtered =  users.filter((value) => `${value[search]}`.toLowerCase().includes(e.target.value.toLowerCase()))
 
-    setUsers(filtered);
+    setData(filtered);
   };
 
 
