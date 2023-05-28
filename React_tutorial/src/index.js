@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import { Create } from './lesson_8 (Fun_hooks)/CRUD/create'
+import { Search } from './lesson_8 (Fun_hooks)/CRUD/search'
 
 
 
@@ -14,7 +14,7 @@ import { Create } from './lesson_8 (Fun_hooks)/CRUD/create'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Create/> 
+  <Search/> 
  
  
 
