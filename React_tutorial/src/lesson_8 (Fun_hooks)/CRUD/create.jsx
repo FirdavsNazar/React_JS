@@ -23,9 +23,21 @@ export const Create = () => {
 };
 
     //  Input function
-    
+
   const multiFunction = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
+}
+
+const onCreate = () => {
+    let user = [
+        ...data,
+        {
+            id: data.length +1,
+            name: data.name,
+            status: data.status
+        }
+    ] 
+        setData(user)
 }
 
 
@@ -36,6 +48,7 @@ export const Create = () => {
         <h1>Status: {data.status}</h1>
         <input onChange={multiFunction} name='name' type="text" placeholder='name' />
         <input onChange={multiFunction} name='status'type="text" placeholder='status' />
+        <button onClick={onCreate}>Create</button>
         <hr /> <br />
       <div className="App">
         <table border={1} style={{ borderCollapse: 'collapse' }} width={'50%'}>
