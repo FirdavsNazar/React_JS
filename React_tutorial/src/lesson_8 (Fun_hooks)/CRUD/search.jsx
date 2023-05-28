@@ -3,9 +3,10 @@ import { users } from '../data.js';
 
 export const Search = () => {
     const [data, setData] = useState(users);
+    const [search, setSearch] = useState('');
   
     const filteredInfo = (e) => {
-        let filtered =  users.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()) || value.status.toLowerCase().includes(e.target.value.toLowerCase()))
+        let filtered =  users.filter((value) => `${value[search]}`.toLowerCase().includes(e.target.value.toLowerCase()))
 
       setData(filtered);
     };
@@ -18,9 +19,18 @@ export const Search = () => {
       const multiFunction = (e) => {
         setData({ ...data, [e.target.name]: e.target.value });
     }
+
+    const onSelect = (e) =>{
+        setSearch(e.target.value)
+    }
   
   return (
     <div>
+        <select onChange={onSelect}>
+            <option value="id">id</option>
+            <option value="name">name</option>
+            <option value="status">status</option>
+        </select>
          <input onChange={filteredInfo} type="text" placeholder='search...' /> <br /> <br />
 
 
