@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import { Read } from './lesson_8 (Fun_hooks)/CRUD/read'
+import { Update } from './lesson_8 (Fun_hooks)/CRUD/update'
 
 
 
@@ -14,7 +14,7 @@ import { Read } from './lesson_8 (Fun_hooks)/CRUD/read'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Read/> 
+  <Update/> 
  
  
 
