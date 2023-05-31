@@ -2,9 +2,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './lesson_9/App'
-
-
+import HookMouseOver from './lesson_9/HookMouseOver'
 
 
 
@@ -16,7 +14,7 @@ import App from './lesson_9/App'
 ReactDOM.render(
 <React.StrictMode>
  
-  <App/> 
+  <HookMouseOver/> 
  
  
 
