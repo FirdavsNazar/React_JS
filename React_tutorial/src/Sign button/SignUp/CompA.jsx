@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {Container, ContainerWrapper, H1, Input, Input2, Wrapper, Wrapper1,Option,Span,Wrapper2, P,Button} from './style'
+import {Container, ContainerWrapper, H1, P3, Input, Input2, Wrapper, Wrapper1,Option,P1,Wrapper2, P,Button} from './style'
 
 const SignIn = () => {
   return (
@@ -10,21 +10,24 @@ const SignIn = () => {
 
              <H1>Sign in</H1>
 
-             <Input type="email" />
-             <Input2 type="password" />
+             <Input type="email" placeholder='email'/>
+             <Input2 type="password" placeholder='password' />
 
              <Wrapper>
                 <Wrapper1>
-                    <Option value=""></Option>
-                    <Span>Remember Me</Span>
+                  
+                    <P1>Remember Me</P1>
                 </Wrapper1>
                 <Wrapper2>
-                    <P>Forgot Password</P>
+                   
+                    <P> <a href="">Forgot Password</a> </P>
 
                 </Wrapper2>
              </Wrapper>
 
-             <Button><a href="./SignIn/CompB">Sign in</a></Button>
+             <Button>Sign In </Button>
+
+             <P3> Don't have an account? <a href="./SignUp/CompA">Create new one</a> </P3>
 
            </ContainerWrapper>
 

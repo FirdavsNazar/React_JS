@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, ContainerWrapper, H1, Input, Input2, Wrapper, Wrapper1,Option,Span,Wrapper2, P,Button} from './style'
+import {Container, ContainerWrapper, H1, Input, Input2, Wrapper, P2,Option,Span,Wrapper2, P,Button} from './style'
 
 const SignIn = () => {
   return (
@@ -7,23 +7,23 @@ const SignIn = () => {
         <Container>
            <ContainerWrapper>
 
-             <H1>Sign in</H1>
+             <H1>Sign up</H1>
 
-             <Input type="email" />
-             <Input2 type="password" />
+             <Input type="email"  placeholder='email'/> <br />
+             <Input type="email" placeholder='email' /><br />
+             <Input2 type="password" placeholder='password' /><br />
+             <Input2 type="password" placeholder='password' />
 
-             <Wrapper>
-                <Wrapper1>
-                    <Option value=""></Option>
-                    <Span>Remember Me</Span>
-                </Wrapper1>
-                <Wrapper2>
-                    <P>Forgot Password</P>
+             
+                   
+            <P>By signing up you accept the <a href="#">Term of service</a>  and <a href="#">Privacy Policy</a> </P>
+              
 
-                </Wrapper2>
-             </Wrapper>
+             <Button>Sign Up</Button>
 
-             <Button><a href="./SignUp/CompA">Sign in</a></Button>
+             <P2> Already I have an account <a href="./SignUp/CompA">Sign In</a> </P2>
+
+
 
            </ContainerWrapper>
 
