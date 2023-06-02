@@ -1,8 +1,8 @@
 
 import React from 'react'
-import {Container, ContainerWrapper, H1, P3, Input, Input2, Wrapper, Wrapper1,Option,P1,Wrapper2, P,Button} from './style'
+import {Container, ContainerWrapper, Button2, H1, P3, Input, Input2, Wrapper, Wrapper1,Option,P1,Wrapper2, P,Button} from './style'
 
-const SignIn = () => {
+const SignIn = ({click}) => {
   return (
     <div>
         <Container>
@@ -27,7 +27,7 @@ const SignIn = () => {
 
              <Button>Sign In </Button>
 
-             <P3> Don't have an account? <a href="./SignUp/CompA">Create new one</a> </P3>
+             <P3> Don't have an account? <Button2 onClick={click}> <P3>Create new one</P3> </Button2>  </P3>
 
            </ContainerWrapper>
 

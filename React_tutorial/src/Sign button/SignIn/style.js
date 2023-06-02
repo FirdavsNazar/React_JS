@@ -109,4 +109,12 @@ color: #FFFFFF;
 
 `
 
-export {Container, P2, ContainerWrapper, H1, Input, Input2, Wrapper, Wrapper1,Option,P,Wrapper2,Button}
+const Button2 = styled.button`
+border:none;
+background-color: white;
+color: blue;
+    border: none;
+    cursor: pointer;
+`
+
+export {Container, P2, Button2, ContainerWrapper, H1, Input, Input2, Wrapper, Wrapper1,Option,P,Wrapper2,Button}
