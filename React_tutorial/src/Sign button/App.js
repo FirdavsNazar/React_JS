@@ -5,26 +5,32 @@ import './App.css'
 
 const App = () => {
 
-  const [isLoggedIn, setLoggedIn] = useState(true)
+  const [islogined, setLogined] = useState(true)
 
-  const handleSignIn = () => {
-    setLoggedIn(false)
+  const loginIn = () => {
+    setLogined(false)
   }
 
-  const handleSignUp = () => {
-    setLoggedIn(true)
+  const loginUp = () => {
+    setLogined(true)
   }
+
+  
   return (
     <div className='Container'>
 
       {
-        isLoggedIn
+        islogined
         ?
-        <CompA  click={handleSignIn} />
+        <CompA click={loginIn} /> 
         :
-        <CompB  click={handleSignUp} />
+        <CompB click={loginUp} />
 
       }
+
+    
+
+      
 
     </div>
 
