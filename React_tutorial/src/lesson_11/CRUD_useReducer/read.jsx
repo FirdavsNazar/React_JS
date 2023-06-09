@@ -34,6 +34,7 @@ const Read = () => {
                                 <td><button>Delete</button></td>
                             </tr>
                         )
+                        
                     })
                 }
             </tbody>
