@@ -2,7 +2,8 @@
 import React, { useReducer, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './lesson_11/useReducer'
+import Read from './lesson_11/CRUD_useReducer/read'
+
 
 
 
@@ -11,7 +12,7 @@ import App from './lesson_11/useReducer'
 ReactDOM.render(
 <React.StrictMode>
  
-  <App/> 
+  <Read/> 
  
 </React.StrictMode>,
 
