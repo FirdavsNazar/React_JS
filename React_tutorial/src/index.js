@@ -1,8 +1,8 @@
 
-import React, { useState } from 'react'
+import React, { useReducer, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './lesson_10/Prop Drilling/App'
+import App from './lesson_11/useReducer'
 
 
 
@@ -14,4 +14,5 @@ ReactDOM.render(
   <App/> 
  
 </React.StrictMode>,
+
 document.getElementById('root'))
