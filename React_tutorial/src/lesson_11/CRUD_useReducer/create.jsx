@@ -1,10 +1,18 @@
-import React, {useReducer} from 'react'
+import React, {useReducer, useState} from 'react'
+import {users} from './data.js'
 
-const fredReducer = (state, action)=>{
 
+
+
+const fredReducer = (state,action)=>{
+
+switch(action.type) {
+    case 'FINDING': return users.filter((value) => value.name.toLowerCase().includes(action.payload.toLowerCase()))
+}
 }
 
-const Read = () => {
+const Create = () => {
+    const [ name, setName] = useReducer('')
     const [state,dispatch] = useReducer(fredReducer,
         [
             {id: 1, name: 'Firdavs'},
@@ -16,6 +24,7 @@ const Read = () => {
         // console.log(state);
   return (
     <div>
+        <input onChange={(e)=> dispatch({type: 'FINDING', payload: e.target.value})} type="text" placeholder='Search...' />
         <table width={'40%'} border='2' style={{borderCollapse:'collapse'}}>
             <thead>
                 <tr>
@@ -44,4 +53,4 @@ const Read = () => {
   )
 }
 
-export default Read
+export default Create
