@@ -11,6 +11,7 @@ const fredReducer = (state,action)=>{
 
 }
 
+
 const Delete = () => {
     const [state,dispatch] = useReducer(fredReducer,
         [
