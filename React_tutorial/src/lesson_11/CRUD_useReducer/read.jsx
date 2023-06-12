@@ -4,6 +4,7 @@ const fredReducer = (state, action)=>{
 
 }
 
+
 const Read = () => {
     const [state,dispatch] = useReducer(fredReducer,
         [
