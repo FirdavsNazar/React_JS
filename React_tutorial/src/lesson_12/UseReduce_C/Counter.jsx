@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { InfoContext } from './context';
 
 const Counter = () => {
+
+  const [state,dispatch] = useContext(InfoContext); 
+
+
   return (
-    <div>Counter</div>
+    <div>
+      {state} <hr />
+    </div>
   )
 }
 

@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { InfoContext } from './context';
 
 const Child = () => {
+  
+  const [state,dispatch] = useContext(InfoContext); 
+
   return (
-    <div>Child</div>
+    <div>
+
+    </div>
   )
 }
 
