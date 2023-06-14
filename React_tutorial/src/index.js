@@ -2,18 +2,17 @@
 import React, { useReducer, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Update from './lesson_11/CRUD_useReducer/update'
-
-
+import { GlobalContext } from './lesson_12/context'
+import ContextA_UseR from './lesson_12/App'
 
 
 
 
 ReactDOM.render(
-<React.StrictMode>
+<GlobalContext>
  
-  <Update/> 
+  <ContextA_UseR/> 
  
-</React.StrictMode>,
+</GlobalContext>,
 
 document.getElementById('root'))
