@@ -2,7 +2,7 @@
 import React, { useReducer, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Create from './lesson_11/CRUD_useReducer/create'
+import Update from './lesson_11/CRUD_useReducer/update'
 
 
 
@@ -12,7 +12,7 @@ import Create from './lesson_11/CRUD_useReducer/create'
 ReactDOM.render(
 <React.StrictMode>
  
-  <Create/> 
+  <Update/> 
  
 </React.StrictMode>,
 
