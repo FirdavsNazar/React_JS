@@ -2,17 +2,14 @@
 import React, { useReducer, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import  GlobalContext from './lesson_12/UseReduce_C/context'
-import ContextA_UseR from './lesson_12/UseReduce_C/App'
+import App from './lesson_13/App'
 
 
 
 
-ReactDOM.render(
-<GlobalContext>
- 
-  <ContextA_UseR/> 
- 
-</GlobalContext>,
 
-document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+
+   <App />
+);
