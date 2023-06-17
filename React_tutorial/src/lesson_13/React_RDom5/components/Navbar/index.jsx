@@ -7,7 +7,7 @@ const Navbar = () => {
     <Container>
       
      
-         <Link activeStyle={{color: 'red'}} to={'l'}>Logo</Link>
+         <Link activeStyle={{color: 'red'}} to={'/'} exact>Logo</Link>
      
 
      
@@ -23,7 +23,7 @@ const Navbar = () => {
      
    
     
-         <Link activeStyle={{color: 'red'}} to={'/context'}>Context</Link>
+         <Link activeStyle={{color: 'red'}} to={'/contacts'}>Contacts</Link>
   
    
 
