@@ -11,6 +11,7 @@ const Parent = () => {
     // }, [])
   
 
+    
     const studentCall = useCallback(() => {    //ism
         return  {name:'Firdavs'}                        //name:ism
     }, [])
