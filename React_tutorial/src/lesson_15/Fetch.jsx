@@ -17,7 +17,6 @@ const Fetch = () => {
                 });
         },[])
 
-        
         const getInfo = (id) => {
 
             fetch(`https://jsonplaceholder.typicode.com/users/${id}`,{
@@ -27,7 +26,7 @@ const Fetch = () => {
             .then((res) =>{ 
                 setSelected(res)
                 });
-        
+    
         }
 
 
