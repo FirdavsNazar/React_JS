@@ -17,6 +17,7 @@ const Fetch = () => {
                 });
         },[])
 
+        
         const getInfo = (id) => {
 
             fetch(`https://jsonplaceholder.typicode.com/users/${id}`,{
