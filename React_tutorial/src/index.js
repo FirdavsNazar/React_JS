@@ -1,17 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Root from './lesson_13/React_RDom5/root';
 
-import React, { useReducer, useState } from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import Root from './lesson_15/Root';
-
-
-
-
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-   
-      <Root />
+ReactDOM.render(
+  <React.StrictMode>
+    <Root />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
