@@ -3,9 +3,9 @@ import { Container,Link } from './style'
 import { Outlet, NavLink } from 'react-router-dom'
 
 const active =(url) => {
-  return window.location.pathname.includes(url)
+  return window.location.pathname.includes(url);
 
-}
+};
 
 
 
@@ -33,7 +33,7 @@ const Navbar = () => {
      
    
     
-         <Link active={active('/contacts')}  to={'/contacts'}>Contacts</Link>
+         <Link active={active('/contacts')}  to={'/contacts'}>Sign in</Link>
   
    
 
