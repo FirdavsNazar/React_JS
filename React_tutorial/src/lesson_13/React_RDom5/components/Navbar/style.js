@@ -17,8 +17,7 @@ const Link = styled(NavLink)`
 color: ${({active}) => (active ? 'red' : 'white')};
 font-family: 'Courier New', Courier, monospace;
 font-weight: 700;
-text-decoration:none
-
+text-decoration:none;
 `
 
 export {Container, Link}

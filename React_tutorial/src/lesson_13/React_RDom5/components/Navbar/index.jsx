@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container,Link } from './style'
 import { Outlet, NavLink } from 'react-router-dom'
+import { navbar } from '../../utils/navbar';
+
 
 const active =(url) => {
   return window.location.pathname.includes(url);
@@ -15,29 +17,13 @@ const Navbar = () => {
     
     
     <Container>
+
+      {
+        navbar.map((item) => {
+          return <Link to={item.path} active={active(item.path)}> {item.title} </Link>
+        })
+      }
       
-     
-         <Link   to={'/'} exact>Logo</Link>
-     
-
-     
-         <Link  active={active('/home')}  to={'/home'}>Home</Link>
-        
-
-        
-        <Link active={active('/about')} to={'/about'}>About</Link>
-      
-         
-    
-         <Link  active={active('/projects')}  to={'/projects'}>Projects</Link>
-     
-   
-    
-         <Link active={active('/contacts')}  to={'/contacts'}>Sign in</Link>
-  
-   
-
-
     </Container>
     <Outlet/>
     </>
