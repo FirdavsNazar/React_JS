@@ -1,10 +1,11 @@
 import React, {useRef} from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,useParams } from 'react-router-dom'
 
 
 const Contacts = () => {
 
   const navigate = useNavigate()
+  const {username} = useParams()
   const onSave = () => {
     if(loginRef.current.value == 'webbrain' && 
     pwRef.current.value === '1234')
@@ -21,7 +22,7 @@ const Contacts = () => {
   const loginRef = useRef()
   const pwRef = useRef()
   return (
-    <div><br /> Contacts <hr />
+    <div><br /> This is the profile page for {username}! <hr />
       <input  ref={loginRef} type="text" />
       <input  ref={pwRef}    type="text" />
       <button onClick={onSave}>submit</button>

@@ -30,7 +30,7 @@ export const navbar = [
 {
     id:4,
     title:'Contacts',
-    path: '/contacts',
+    path: '/contacts/:username',
     element: <Contacts/>,
 },
 
