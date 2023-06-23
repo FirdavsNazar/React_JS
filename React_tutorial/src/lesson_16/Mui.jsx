@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 
 const Mui = () => {
   return (
@@ -7,7 +7,7 @@ const Mui = () => {
         <h1>
             Mui
         </h1>
-        <Button>Primary</Button>
+        {/* <Button>Primary</Button> */}
     </div>
   )
 }
