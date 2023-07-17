@@ -8,6 +8,7 @@ const Card = ({info}) => {
       <Header>{info.title}</Header>
       
       
+      
       <BigWrapper>
 
       <IconWrap>
